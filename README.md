@@ -131,73 +131,7 @@ if __name__ == "__main__":
         for d in dispositivos:
             if isinstance(d, ActuadorLuz):
                 d.adjust_intensity = d.ajustar_intensidad(intensidad_luz)
-
-# -------------------------------
-# Ejemplo de ejecución en python
-# -------------------------------
-
---- Ciclo de riego 1 ---
-ID: Hum1 | Estado: Encendido
-Humedad actual: 45.7%
-ID: Hum2 | Estado: Encendido
-Humedad actual: 52.3%
-ID: Valvula1 | Estado: Encendido
-Válvula: Cerrada
-ID: Luz1 | Estado: Encendido
-Intensidad de luz: 15%
-ID: Luz2 | Estado: Encendido
-Intensidad de luz: 15%
-
---- Ciclo de riego 2 ---
-ID: Hum1 | Estado: Encendido
-Humedad actual: 38.2%
-ID: Hum2 | Estado: Encendido
-Humedad actual: 41.0%
-ID: Valvula1 | Estado: Encendido
-Válvula: Abierta
-ID: Luz1 | Estado: Encendido
-Intensidad de luz: 39%
-ID: Luz2 | Estado: Encendido
-Intensidad de luz: 39%
-
---- Ciclo de riego 3 ---
-ID: Hum1 | Estado: Encendido
-Humedad actual: 55.6%
-ID: Hum2 | Estado: Encendido
-Humedad actual: 60.2%
-ID: Valvula1 | Estado: Encendido
-Válvula: Cerrada
-ID: Luz1 | Estado: Encendido
-Intensidad de luz: 0%
-ID: Luz2 | Estado: Encendido
-Intensidad de luz: 0%
-
---- Ciclo de riego 4 ---
-ID: Hum1 | Estado: Encendido
-Humedad actual: 47.8%
-ID: Hum2 | Estado: Encendido
-Humedad actual: 49.5%
-ID: Valvula1 | Estado: Encendido
-Válvula: Abierta
-ID: Luz1 | Estado: Encendido
-Intensidad de luz: 12%
-ID: Luz2 | Estado: Encendido
-Intensidad de luz: 12%
-
---- Ciclo de riego 5 ---
-ID: Hum1 | Estado: Encendido
-Humedad actual: 62.0%
-ID: Hum2 | Estado: Encendido
-Humedad actual: 58.7%
-ID: Valvula1 | Estado: Encendido
-Válvula: Cerrada
-ID: Luz1 | Estado: Encendido
-Intensidad de luz: 0%
-ID: Luz2 | Estado: Encendido
-Intensidad de luz: 0%
-
-    
-       
+        
         # Mostrar datos de todos (polimorfismo)
         for d in dispositivos:
             d.mostrar_datos()
